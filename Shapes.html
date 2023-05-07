@@ -1,0 +1,21 @@
+<html>
+  <div id="ball" style="
+      z-index: 5;
+      position: absolute;
+      left: 0px;
+      top: 200px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: rgb(121, 37, 44);
+      ">
+  </div>   
+  <script>
+    var velocity = 200;
+    var position = 0;
+    var ball = document.getElementById('ball');
+
+    setInterval( function () {position = position + velocity;
+    ball.style.left = position + 'px'}, 1000);
+  </script>
+</html>
