@@ -6,6 +6,9 @@
 	function compPeople (pA,pB) {
 		return pA.salary - pB.salary;
 	}
+	function revCompPeople(pA,pB){
+		return pB.salary - pA.salary;
+	}
 
 	function renderPosts(boston, container) {
 		var top5 = []
@@ -20,7 +23,7 @@
                 if (top5.length < 5){
 				  top5.push(personA);
 				} else {
-				  top5.sort(function(a,b){return b.salary - a.salary})
+				  top5.sort(revCompPeople)
 				  if (compPeople(personA,top5[4]) >= 0) {
                     top5.pop()
 					top5.push(personA)
@@ -29,12 +32,12 @@
 				over100k++;
 			}
 		}
-		for (let i=0; i<5; i++) {
+		for (let i=0; i<top5.length; i++) {
 			html += '<li class="boston">' +
 				'<h2>' + top5[i].name + '</h2>' +
 				'<h3>$' + top5[i].salary + ' per year</h3>' 
 		}
-		container.innerHTML = '<h1> People making over 100k in Boston:' + over100k + '</h1><ul id = "boston">' 
+		container.innerHTML = '<h1> People making over 200k in Boston:' + over100k + '</h1><ul id = "boston">' 
 			+ html + '</ul>' ;
 	}
 	renderPosts(boston, document.getElementById('container'));

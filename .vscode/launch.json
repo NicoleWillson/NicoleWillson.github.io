@@ -1,0 +1,43 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+
+
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open mo7 index.html",
+            "file": "c:/cygwin64/home/Nicol/NicoleWillson.github.io/Mod7/index.html"
+        },
+
+
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open ball.html",
+            "file": "c:/cygwin64/home/Nicol/NicoleWillson.github.io/ball.html"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open task4-01.html",
+            "file": "c:/cygwin64/home/Nicol/NicoleWillson.github.io/index.html"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open tables.html",
+            "file": "c:/cygwin64/home/Nicol/NicoleWillson.github.io/tables.html"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open projectile.html",
+            "file": "c:/cygwin64/home/Nicol/NicoleWillson.github.io/projectile.html"
+        }
+    ]
+}
