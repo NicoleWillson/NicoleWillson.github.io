@@ -1,2 +1,8 @@
 .vscode
 node_modules
+.vscode/launch.json
+package-lock.json
+package.json
+ExerciseFiles/Hello World Exercise/LICENSE
+ExerciseFiles/Inject JavaScript into HTML Exercise/LICENSE
+ExerciseFiles/MIT Facts Exercise/LICENSE
