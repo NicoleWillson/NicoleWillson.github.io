@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid</title>
+    <style>
+        .on{
+            background: orange;
+        }                
+        .content{
+            display: grid;
+            grid-template-columns: repeat(10,1fr);
+            grid-template-rows: repeat(10,1fr);
+            gap: 5px;
+        }
+        div{
+            padding: 10px;
+            text-align: center;
+            border-style: solid;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="createGrid()">CREATE GRID</button>    
+    <button onclick="move()" style="margin-bottom: 10px;">MOVE</button>
+    <main class="content" id="target">
+    </main>
+    <script>
+        function createGrid() {
+            const element = document.getElementById("target");
+            for (let i = 1; i <= 100; i++) {
+                let idName = "i_" + i;
+                const divi = document.createElement("div");
+                divi.innerText = i;
+                divi.id = idName;
+                element.appendChild(divi);
+            }
+
+        }
+    </script>
+</body>
+</html>
